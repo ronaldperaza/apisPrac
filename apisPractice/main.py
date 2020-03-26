@@ -3,7 +3,7 @@ import requests
 
 
 if __name__ == '__main__':
-	#url = 'http://dogs.magnet.cl/api/v1/auth/'
+	
 	url = 'https://pokeapi.co/api/v2/pokemon-form/'    
 
 	response = requests.get(url)
