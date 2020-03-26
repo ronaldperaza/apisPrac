@@ -6,14 +6,11 @@ if __name__== '__main__':
 
     args = { 'name': 'ronald', 'curso': 'python', 'level': 'mid', }
 
-    response = requests.get(url, params=args)
+    response = requests.post(url, params=args)
     print(response.url)
 
     if response.status_code == 200:
-        
-       response_json = response.json()
-       origin = response_json['origin']
-       print(origin)
+        print(response.content)
 
 
 
