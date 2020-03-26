@@ -1,3 +1,6 @@
+#list of name of poke
+#pokeapiW
+
 import requests
 #import json
 
@@ -17,3 +20,6 @@ if __name__ == '__main__':
 			for pokemon in results:
 				name = pokemon['name']
 				print(name)
+
+
+
